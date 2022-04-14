@@ -19,8 +19,17 @@ $('.header-carousel-row').slick({
             }
         },
         {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
             breakpoint: 600,
             settings: {
+                arrows: false,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
@@ -28,6 +37,7 @@ $('.header-carousel-row').slick({
         {
             breakpoint: 480,
             settings: {
+                arrows: false,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
