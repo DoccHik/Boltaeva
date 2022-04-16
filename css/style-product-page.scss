@@ -1,0 +1,160 @@
+@import './style.scss';
+$font-care: 'Cera Pro',
+sans-serif;
+$font-color: #555;
+$bg-accent: #F5ECE3;
+$bg-footer: #EEE4DA;
+.for-face {
+    background-color: $bg-accent;
+    padding: 0px 0px 70px 0px;
+    &-row {
+        display: flex;
+        justify-content: center;
+    }
+    &__product {
+        &-order {
+            // padding: 168px 50px 50px 163px;
+            max-width: 400px;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            margin: 0px 0px 0px 160px;
+        }
+        &-favorites {
+            margin: 0px 0px 32px 0px;
+            display: flex;
+            align-items: center;
+            &-icon {
+                margin: 0px 10px 0px 0px;
+                &:hover svg {
+                    fill: red;
+                }
+            }
+            &-text {
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.03em;
+                color: $font-color;
+            }
+        }
+        &-title {
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 53px;
+            color: $font-color;
+            letter-spacing: -0.03em;
+            margin: 0px 0px 28px 0px;
+        }
+        &-counter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 0px 31px 0px;
+        }
+        &-btn {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            font-weight: 400;
+            cursor: pointer;
+            color: $font-color;
+            &-count {
+                display: flex;
+                align-items: center;
+                background-color: $bg-footer;
+                border-radius: 66px;
+                padding: 11px 22px 11px 22px;
+                transition: all 0.3s ease;
+                &:hover {
+                    transition: all 0.3s ease;
+                    box-shadow: 0px 0px 10px $font-color;
+                }
+            }
+        }
+        &-number {
+            padding: 0px 45px 0px 45px;
+        }
+        &-price {
+            font-size: 32px;
+            font-weight: 400;
+            color: $font-color;
+            line-height: 38px;
+            letter-spacing: -0.02em;
+        }
+        &-add {
+            margin: 0px 0px 53px 0px;
+            &-btn {
+                position: relative;
+                display: block;
+                background-color: $bg-footer;
+                border: none;
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 19px;
+                padding: 30px 125px;
+                border-radius: 76px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover {
+                    transition: all 0.3s ease;
+                    box-shadow: 0px 0px 10px $font-color;
+                }
+            }
+            &-image {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 100px;
+            }
+        }
+        &-descriptions {
+            &-nav {
+                display: flex;
+                margin: 0px 0px 21px 0px;
+            }
+            &-btn {
+                font-size: 16px;
+                margin: 0px 10px 0px 0px;
+                padding: 3px 17px 3px 17px;
+                border-radius: 56px;
+                background-color: transparent;
+                border: none;
+                color: rgba($font-color, 0.5);
+                &--active {
+                    background-color: $bg-footer;
+                    color: $font-color;
+                }
+                transition: all 0.3s ease;
+                &:hover {
+                    transition: all 0.3s ease;
+                    box-shadow: 0px 0px 10px $font-color;
+                }
+            }
+            &-text {
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.02em;
+                line-height: 24px;
+                color: $font-color;
+            }
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.product-info {
+    &-reverse {
+        padding: 0px 0px 70px 0px;
+        &-row {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
